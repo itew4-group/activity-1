@@ -1,1 +1,12 @@
+.vintage-item {
+    text-align: center;
+}
+.vintage-item {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
 
+footer {
+    text-align: center;
+}
