@@ -21,6 +21,11 @@ button, a {
     font-family: 'Playfair Display', serif; 
 }
 
+#redirects button a {
+    text-decoration: unset;
+    color: #000;
+}
+
 #redirects button {
     height: 60px;
     width: 180px;
