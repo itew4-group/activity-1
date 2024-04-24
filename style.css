@@ -84,52 +84,96 @@ footer {
 /* Garden */
 
 #bodyGarden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     background-color: #DCDCDC;
     font-family: 'Calibri', sans-serif;
-    padding: 10px 50px
+    padding: 10px 50px;
+}
+
+#bodyGarden section {
+    top: 0;
+    bottom: 0;
+    width: 1300px;
+    padding: 25px 0 70px 0;
 }
 
 #bodyGarden header {
     font-size: 50px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin: 0 0 30px 80px;
 }
 
-#bodyGarden main{
+#bodyGarden hr {
+    height: 3px;
+    background-color: gray;
+}
+
+#bodyGarden main {
     display: grid;
+    width: 100%;
+    justify-items: center;
+}
+
+#bodyGarden .grid-for-three {
     grid-template-columns: auto auto auto;
 }
 
-#bodyGarden .spotlight{
-    background: url(https://thebudgetarianbride.com/wp-content/uploads/2020/01/47-Kat-Manalo-Barrion-1024x682.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+#bodyGarden .grid-for-two {
+    grid-template-columns: auto auto;
+}
+
+#bodyGarden .grid-for-one {
+    grid-template-columns: auto;
+}
+
+#bodyGarden .spotlight, #bodyGarden .portrait, #bodyGarden .landscape, #bodyGarden .wide {
+    margin: 30px 10px;
+    border: #555 2px solid;
+    position: relative;
     display: flex;
-    border-radius: 30px;
-    height: 350px;
-    width: 650px;
     color: white;
     box-shadow: #000 0px 0px 4px;
     cursor: pointer;
     transition: .3s ease;
+    border-radius: 30px;
 }
-#bodyGarden .spotlight:hover {
+
+#bodyGarden .spotlight:hover, #bodyGarden .portrait:hover, #bodyGarden .landscape:hover, #bodyGarden .wide:hover {
     box-shadow: #000 0px 0px 6px;
     transform: scale(1.03);
 }
 
-#bodyGarden .spotlight div {
+#bodyGarden .spotlight img, #bodyGarden .portrait img, #bodyGarden .landscape img, #bodyGarden .wide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 30px;
+
+}
+
+#bodyGarden .spotlight div, #bodyGarden .portrait div, #bodyGarden .landscape div, #bodyGarden .wide div {
     align-self: flex-end;
-    padding: 100px 20px 10px 20px;
+    padding: 40px 20px 10px 20px;
     background-image: linear-gradient(transparent, gray);
     width: 100%;
     border-radius: 30px;
+    z-index: 2;
 }
 
-#bodyGarden .spotlight label{
+#bodyGarden .spotlight label, #bodyGarden .portrait label, #bodyGarden .landscape label, #bodyGarden .wide label {
     font-family: 'Times New Roman', Times, serif;
     display: block;
     margin: 5px;
+}
+
+#bodyGarden .spotlight, #bodyGarden .spotlight img {
+    height: 350px;
+    width: 570px;
 }
 
 .spotlight .lbl-title {
@@ -140,42 +184,47 @@ footer {
     font-size: 18px;
 }
 
-#bodyGarden .portrait{
-    background-position-x: -100px;
-    background-position-y: center;
-    display: flex;
-    border-radius: 30px;
+.portrait .lbl-title, .landscape .lbl-title, .wide .lbl-title {
+    font-size: 24px;
+}
+
+.portrait .lbl-desc, .landscape .lbl-desc, .wide .lbl-desc {
+    font-size: 15px;
+}
+
+#bodyGarden .portrait, #bodyGarden .portrait img {
     height: 350px;
-    width: 240px;
-    color: white;
-    box-shadow: #000 0px 0px 4px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-#bodyGarden .portrait:hover {
-    box-shadow: #000 0px 0px 6px;
-    transform: scale(1.03);
+    width: 260px;
 }
 
-#bodyGarden .portrait div {
-    align-self: flex-end;
-    padding: 100px 20px 10px 20px;
-    background-image: linear-gradient(transparent, gray);
-    width: 100%;
+
+#bodyGarden .landscape, #bodyGarden .landscape img {
+    height: 240px;
+    width: 370px;
+}
+
+#bodyGarden .wide {
+    height: 200px;
+    width: 1200px;
     border-radius: 30px;
+    overflow: hidden;
 }
 
-#bodyGarden .portrait label{
-    font-family: 'Times New Roman', Times, serif;
-    display: block;
-    margin: 5px;
+#bodyGarden .wide img {
+    height: 320px;
+    width: 1200px;
+    border-radius: 30px;
+    margin-top: -120px;
 }
 
-.portrait .lbl-title {
-    font-size: 30px;
+#bodyGarden footer {
+    text-align: left;
+    margin: 30px 0 0 80px;
 }
 
-.portrait .lbl-desc {
-    font-size: 18px;
+#bodyGarden footer a {
+    color:#555;
+    font-weight: bold;
+    text-decoration: unset;
+    font-size: 22px;
 }
-
