@@ -108,11 +108,11 @@ header {
 #bodyGarden header {
     font-size: 50px;
     font-weight: bold;
-    margin: 0 0 30px 80px;
+    margin-bottom: 30px;
 }
 
 #bodyGarden hr {
-    height: 3px;
+    height: 4px;
     background-color: gray;
 }
 
