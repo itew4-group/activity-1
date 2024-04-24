@@ -5,48 +5,63 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', serif; 
 }
 
 #middlespace {
-    top:0;
+    top: 0;
     bottom: 0;
     padding: 50px 0;
     background-color: #DCDCDC;
     text-align: center;
     width: 1300px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display', serif; 
 }
 
 #redirects button {
     height: 60px;
     width: 180px;
-    background-color: #000;
-    color: #fff;
+    background-color: #FAEBD7;
+    color: #000;
     font-size: 18px;
     margin: 0 30px;
+    font-family: 'Great Vibes', cursive; 
 }
+
 
 #companyName {
     margin-top: 60px;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 150px;
+    font-family: 'Brush Script MT', cursive; 
 }
 
-#description {
+#description{
+    background-color: #FAEBD7;
     text-align: center;
     font-size: 20px;
-    margin: 40px 150px; 
-
+    margin: 40px 150px;
+    font-family: 'Great Vibes', cursive;
 }
+
 
 #homeImages img {
     margin-top: 20px;
     height: 400px;
     width: 270px;
-    padding: 0 10px;
+    padding: 0;
     object-fit: cover;
+    transition: transform 0.9s ease; 
+    border-radius: 10px; /* Add rounded corners */
+    border: 5px solid #fff; /* Add a white border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
 }
+
+#homeImages img:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    border-color: #ffc0cb; /* Change border color on hover */
+}
+
 
 /* Vintage */
 
