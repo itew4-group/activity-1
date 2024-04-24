@@ -1,3 +1,7 @@
+button, a {
+    cursor: pointer;
+}
+
 /* Home */
 #bodyHome {
     margin: 0;
@@ -10,7 +14,7 @@
 #middlespace {
     top: 0;
     bottom: 0;
-    padding: 50px 0;
+    padding: 50px 0 70px 0;
     background-color: #DCDCDC;
     text-align: center;
     width: 1300px;
@@ -75,5 +79,103 @@
 
 footer {
     text-align: center;
+}
+
+/* Garden */
+
+#bodyGarden {
+    background-color: #DCDCDC;
+    font-family: 'Calibri', sans-serif;
+    padding: 10px 50px
+}
+
+#bodyGarden header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#bodyGarden main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#bodyGarden .spotlight{
+    background: url(https://thebudgetarianbride.com/wp-content/uploads/2020/01/47-Kat-Manalo-Barrion-1024x682.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    border-radius: 30px;
+    height: 350px;
+    width: 650px;
+    color: white;
+    box-shadow: #000 0px 0px 4px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+#bodyGarden .spotlight:hover {
+    box-shadow: #000 0px 0px 6px;
+    transform: scale(1.03);
+}
+
+#bodyGarden .spotlight div {
+    align-self: flex-end;
+    padding: 100px 20px 10px 20px;
+    background-image: linear-gradient(transparent, gray);
+    width: 100%;
+    border-radius: 30px;
+}
+
+#bodyGarden .spotlight label{
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin: 5px;
+}
+
+.spotlight .lbl-title {
+    font-size: 30px;
+}
+
+.spotlight .lbl-desc {
+    font-size: 18px;
+}
+
+#bodyGarden .portrait{
+    background-position-x: -100px;
+    background-position-y: center;
+    display: flex;
+    border-radius: 30px;
+    height: 350px;
+    width: 240px;
+    color: white;
+    box-shadow: #000 0px 0px 4px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+#bodyGarden .portrait:hover {
+    box-shadow: #000 0px 0px 6px;
+    transform: scale(1.03);
+}
+
+#bodyGarden .portrait div {
+    align-self: flex-end;
+    padding: 100px 20px 10px 20px;
+    background-image: linear-gradient(transparent, gray);
+    width: 100%;
+    border-radius: 30px;
+}
+
+#bodyGarden .portrait label{
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin: 5px;
+}
+
+.portrait .lbl-title {
+    font-size: 30px;
+}
+
+.portrait .lbl-desc {
+    font-size: 18px;
 }
 
