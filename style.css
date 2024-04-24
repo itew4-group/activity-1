@@ -1,8 +1,5 @@
-button, a {
-    cursor: pointer;
-}
-
 /* Home */
+
 #bodyHome {
     margin: 0;
     display: flex;
@@ -14,12 +11,16 @@ button, a {
 #middlespace {
     top: 0;
     bottom: 0;
-    padding: 50px 0 70px 0;
+    padding: 50px 0;
+    background-image: url('https://i.pinimg.com/564x/6a/e4/60/6ae460cc0ca4867a5a7de0b1cf328203.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #DCDCDC;
     text-align: center;
     width: 1300px;
     font-family: 'Playfair Display', serif; 
 }
+
 
 #redirects button {
     height: 60px;
@@ -55,127 +56,99 @@ button, a {
     padding: 0;
     object-fit: cover;
     transition: transform 0.9s ease; 
-    border-radius: 10px; /* Add rounded corners */
-    border: 5px solid #fff; /* Add a white border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    border-radius: 10px;
+    border: 5px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 #homeImages img:hover {
-    transform: scale(1.05); /* Scale up slightly on hover */
-    border-color: #ffc0cb; /* Change border color on hover */
+    transform: scale(1.05) rotate(5deg); 
+    border-color: #ffc0cb; 
 }
+
 
 
 /* Vintage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.vintage-item {
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #DEB887;
+    color: #4d4d4d;
+    line-height: 1.6;
+}
+
+header {
     text-align: center;
-}
-.vintage-item {
-    display: inline-block;
-    margin: 20px;
-    vertical-align: top;
+    padding: 20px 0;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    color: #8c5a52;
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #8c5a52;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.vintage-item1, .vintage-item2, .vintage-item3, .vintage-item4, .vintage-item5 {
+    background-color: #f5f0ea;
+    border: 1px solid #e1cfc6;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease; 
+}
+
+.vintage-item1:hover, .vintage-item2:hover, .vintage-item3:hover, .vintage-item4:hover, .vintage-item5:hover {
+    background-color: #e1cfc6; 
+    transform: scale(1.05); 
+}
+
+.vintage-item1 img, .vintage-item2 img, .vintage-item3 img, .vintage-item4 img, .vintage-item5 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.vintage-item1 p, .vintage-item2 p, .vintage-item3 p, .vintage-item4 p, .vintage-item5 p {
+    font-style: italic;
+    color: #8c5a52;
+}
 footer {
     text-align: center;
+    padding: 20px 0;
+    background-color: #8c5a52;
+    color: #fff;
 }
 
-/* Garden */
-
-#bodyGarden {
-    background-color: #DCDCDC;
-    font-family: 'Calibri', sans-serif;
-    padding: 10px 50px
+footer p {
+    font-size: 1rem;
 }
 
-#bodyGarden header {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
 
-#bodyGarden main{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-#bodyGarden .spotlight{
-    background: url(https://thebudgetarianbride.com/wp-content/uploads/2020/01/47-Kat-Manalo-Barrion-1024x682.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    border-radius: 30px;
-    height: 350px;
-    width: 650px;
-    color: white;
-    box-shadow: #000 0px 0px 4px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-#bodyGarden .spotlight:hover {
-    box-shadow: #000 0px 0px 6px;
-    transform: scale(1.03);
-}
-
-#bodyGarden .spotlight div {
-    align-self: flex-end;
-    padding: 100px 20px 10px 20px;
-    background-image: linear-gradient(transparent, gray);
-    width: 100%;
-    border-radius: 30px;
-}
-
-#bodyGarden .spotlight label{
-    font-family: 'Times New Roman', Times, serif;
-    display: block;
-    margin: 5px;
-}
-
-.spotlight .lbl-title {
-    font-size: 30px;
-}
-
-.spotlight .lbl-desc {
-    font-size: 18px;
-}
-
-#bodyGarden .portrait{
-    background-position-x: -100px;
-    background-position-y: center;
-    display: flex;
-    border-radius: 30px;
-    height: 350px;
-    width: 240px;
-    color: white;
-    box-shadow: #000 0px 0px 4px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-#bodyGarden .portrait:hover {
-    box-shadow: #000 0px 0px 6px;
-    transform: scale(1.03);
-}
-
-#bodyGarden .portrait div {
-    align-self: flex-end;
-    padding: 100px 20px 10px 20px;
-    background-image: linear-gradient(transparent, gray);
-    width: 100%;
-    border-radius: 30px;
-}
-
-#bodyGarden .portrait label{
-    font-family: 'Times New Roman', Times, serif;
-    display: block;
-    margin: 5px;
-}
-
-.portrait .lbl-title {
-    font-size: 30px;
-}
-
-.portrait .lbl-desc {
-    font-size: 18px;
-}
 
