@@ -293,3 +293,132 @@ section {
     text-decoration: unset;
     font-size: 22px;
 }
+
+/*fairytale*/
+
+/* Macro Layout */
+body {
+    background-color: #DCDCDC;
+    font-family: cursive;
+}
+
+header {
+    background-color: #DCDCDC;
+    color: black;
+    padding: 10px;
+    font-family: cursive;
+}
+
+section {
+    /* Micro Layout: Adjusted margin to create space between sections */
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    /* Micro Layout: Adjusted flex properties to create a gallery layout */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #DCDCDC;
+}
+
+/* Individual Gallery Items */
+.fairytale {
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.3);
+    padding: 0px;
+}
+
+.fairytale:hover {
+    transform: scale(1.1);
+}
+
+.fairytale img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fairytale p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #DCDCDC;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*beach*/
+
+/* Macro Layout */
+body {
+    background-color: #DCDCDC;
+}
+
+header {
+    /* Macro Layout: Header styling */
+    background-color: #DCDCDC;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    /* Macro Layout: Footer styling */
+    background-color: #DCDCDC;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Micro Layout */
+.gallery-container {
+    /* Micro Layout: Gallery container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Individual Gallery Items */
+.beach {
+    /* Micro Layout: Individual gallery item */
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+    border-radius: 18px;
+    padding: 10px;
+}
+
+.beach:hover {
+    /* Micro Layout: Hover effect */
+    transform: scale(1.1);
+}
+
+.beach img {
+    /* Micro Layout: Image styling */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.beach p {
+    /* Micro Layout: Text styling */
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+h2 {
+    /* Micro Layout: Heading styling */
+    color: #333;
+    margin-bottom: 20px;
+}
