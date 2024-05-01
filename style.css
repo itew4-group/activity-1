@@ -42,7 +42,7 @@
     padding: 0;
     object-fit: cover;
     transition: transform 0.9s ease; 
-    margin: 5px;
+    margin: 10px;
 }
 
 #homeImages img:hover {
@@ -51,16 +51,27 @@
 
 #homeImages .img-grid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     justify-content: center;
 }
 
 #homeImages .first img{
-    width: 1300px;
+    width: 1000px;
 }
 
 #homeImages .second img{
-    width: 645px;
+    width: 490px;
+}
+
+@media (width <= 1000px) {
+    #homeImages .img-grid {
+        grid-template-columns: auto;
+    }
+
+    #homeImages .img-grid img {
+        width: 85vw;
+    }
+
 }
 /* #description{
     background-color: #FAEBD7;
