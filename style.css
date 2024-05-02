@@ -3,7 +3,7 @@
 #bodyHome {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #DEB887;
+    background-color: #FFF8DC;
 }
 
 #globalHeader {
@@ -114,4 +114,5 @@
     font-family: 'Great Vibes', cursive; 
     font-weight: 400; 
     color: white; 
+    padding: 0 80px;
 }
