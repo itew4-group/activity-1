@@ -2,7 +2,7 @@
 
 #bodyHome {
     margin: 0;
-    font-family: 'Calibri', sans-serif; 
+    font-family: 'Arial', sans-serif;
 }
 
 #globalHeader {
@@ -16,21 +16,25 @@
     justify-content: space-between;
     padding: 0 40px;
     background-color: #fff;
-    font-family: 'Calibri', sans-serif; 
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
 }
 
-#globalHeader label{
+#globalHeader label {
     font-size: 25px;
+    color: #FF7F50;
+    background-color: #FFEBCD; 
+    padding: 5px 10px;
+    font-family: 'Playfair Display', serif;
+ 
 }
+
 
 #globalHeader nav a {
     padding: 0 12px;
-    color: #000;
+    color: #FF7F50;
     text-decoration: none;
 }
-
-
 #middlespace {
     top: 60px;
     left: 0;
@@ -39,38 +43,38 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #DCDCDC;
+    background-color: #FFF8DC;
     align-items: center;
-    font-family: 'Calibri', serif; 
+    font-family: 'Arial', sans-serif;
 }
 
 #homeImages img {
     height: 350px;
     padding: 0;
     object-fit: cover;
-    transition: transform 0.9s ease; 
+    transition: transform 0.3s ease;
     margin: 10px;
 }
 
 #homeImages img:hover {
-    border-color: #ffc0cb; 
+    transform: scale(1.1);
 }
 
-#homeImages .img-grid{
+#homeImages .img-grid {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
 }
 
-#homeImages .first img{
+#homeImages .first img {
     width: 1000px;
 }
 
-#homeImages .second img{
+#homeImages .second img {
     width: 490px;
 }
 
-@media (width <= 1000px) {
+@media (max-width: 1000px) {
     #homeImages .img-grid {
         grid-template-columns: auto;
     }
@@ -78,369 +82,35 @@
     #homeImages .img-grid img {
         width: 85vw;
     }
-
-}
-/* #description{
-    background-color: #FAEBD7;
-    text-align: center;
-    font-size: 20px;
-    margin: 40px 150px;
-    font-family: 'Great Vibes', cursive;
-} */
-
-
-/* Vintage */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-
-body {
-    font-family: 'Cinzel', serif; 
-    background-color: #f2e2d9; 
-    color: #444; 
-    line-height: 1.6;
-}
-
-
-header {
-    background-color: #fff; 
-    padding: 20px;
-    text-align: center;
-}
-
-
-section {
-    padding: 20px;
-}
-
-
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-
-.vintage-item {
+.image-container {
     position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    display: inline-block; 
 }
 
-.vintage-item:hover {
-    transform: translateY(-5px);
-}
-
-
-.vintage-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-    transition: transform 0.3s ease;
-}
-
-
-.vintage-item img:hover {
-    transform: scale(1.1);
-}
-
-
-.vintage-item p {
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 0 0 10px 10px;
+.overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 42, 42, 0.8); 
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.vintage-item:hover p {
+.image-container:hover .overlay {
     opacity: 1;
 }
 
-
-/* Garden */
-
-#bodyGarden {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    background-color: #DCDCDC;
-    font-family: 'Calibri', sans-serif;
-    padding: 10px 50px;
-}
-
-#bodyGarden section {
-    top: 0;
-    bottom: 0;
-    width: 1300px;
-    padding: 25px 0 70px 0;
-}
-
-#bodyGarden header {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-#bodyGarden hr {
-    height: 4px;
-    background-color: gray;
-}
-
-#bodyGarden main {
-    display: grid;
-    width: 100%;
-    justify-items: center;
-}
-
-#bodyGarden .grid-for-three {
-    grid-template-columns: auto auto auto;
-}
-
-#bodyGarden .grid-for-two {
-    grid-template-columns: auto auto;
-}
-
-#bodyGarden .grid-for-one {
-    grid-template-columns: auto;
-}
-
-#bodyGarden .spotlight, #bodyGarden .portrait, #bodyGarden .landscape, #bodyGarden .wide {
-    margin: 30px 10px;
-    border: #555 2px solid;
-    position: relative;
-    display: flex;
-    color: white;
-    box-shadow: #000 0px 0px 4px;
-    cursor: pointer;
-    transition: .3s ease;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-#bodyGarden .spotlight:hover, #bodyGarden .portrait:hover, #bodyGarden .landscape:hover, #bodyGarden .wide:hover {
-    box-shadow: #000 0px 0px 6px;
-    transform: scale(1.03);
-}
-
-#bodyGarden .spotlight img, #bodyGarden .portrait img, #bodyGarden .landscape img, #bodyGarden .wide img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: 1;
-    border-radius: 30px;
-
-}
-
-#bodyGarden .spotlight div, #bodyGarden .portrait div, #bodyGarden .landscape div, #bodyGarden .wide div {
-    align-self: flex-end;
-    padding: 40px 20px 10px 20px;
-    background-image: linear-gradient(transparent, gray);
-    width: 100%;
-    border-radius: 30px;
-    z-index: 2;
-}
-
-#bodyGarden .spotlight label, #bodyGarden .portrait label, #bodyGarden .landscape label, #bodyGarden .wide label {
-    font-family: 'Times New Roman', Times, serif;
-    display: block;
-    margin: 5px;
-}
-
-#bodyGarden .spotlight, #bodyGarden .spotlight img {
-    height: 350px;
-    width: 570px;
-}
-
-.spotlight .lbl-title {
-    font-size: 30px;
-}
-
-.spotlight .lbl-desc {
-    font-size: 18px;
-}
-
-.portrait .lbl-title, .landscape .lbl-title, .wide .lbl-title {
-    font-size: 24px;
-}
-
-.portrait .lbl-desc, .landscape .lbl-desc, .wide .lbl-desc {
-    font-size: 15px;
-}
-
-#bodyGarden .portrait, #bodyGarden .portrait img {
-    height: 350px;
-    width: 260px;
-}
-
-
-#bodyGarden .landscape, #bodyGarden .landscape img {
-    height: 240px;
-    width: 370px;
-}
-
-#bodyGarden .wide {
-    height: 200px;
-    width: 1200px;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-#bodyGarden .wide img {
-    height: 320px;
-    width: 1200px;
-    border-radius: 30px;
-    margin-top: -120px;
-}
-
-#bodyGarden footer {
-    text-align: left;
-    margin: 30px 0 0 80px;
-}
-
-#bodyGarden footer a {
-    color:#555;
-    font-weight: bold;
-    text-decoration: unset;
-    font-size: 22px;
-}
-
-/*fairytale*/
-
-/* Macro Layout */
-body {
-    background-color: #DCDCDC;
-    font-family: cursive;
-}
-
-header {
-    background-color: #DCDCDC;
-    color: black;
-    padding: 10px;
-    font-family: cursive;
-}
-
-section {
-    /* Micro Layout: Adjusted margin to create space between sections */
-    margin-bottom: 20px;
-}
-
-.gallery-container {
-    /* Micro Layout: Adjusted flex properties to create a gallery layout */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #DCDCDC;
-}
-
-/* Individual Gallery Items */
-.fairytale {
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    background-color: black;
-    border-radius: 8px;
-    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.3);
-    padding: 0px;
-}
-
-.fairytale:hover {
-    transform: scale(1.1);
-}
-
-.fairytale img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.fairytale p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #DCDCDC;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/*beach*/
-
-/* Macro Layout */
-body {
-    background-color: #DCDCDC;
-}
-
-header {
-    /* Macro Layout: Header styling */
-    background-color: #DCDCDC;
-    color: black;
-    padding: 10px;
-    text-align: center;
-}
-
-footer {
-    /* Macro Layout: Footer styling */
-    background-color: #DCDCDC;
-    color: black;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Micro Layout */
-.gallery-container {
-    /* Micro Layout: Gallery container */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* Individual Gallery Items */
-.beach {
-    /* Micro Layout: Individual gallery item */
-    margin: 20px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    background-color: #f9f9f9;
-    border-radius: 18px;
-    padding: 10px;
-}
-
-.beach:hover {
-    /* Micro Layout: Hover effect */
-    transform: scale(1.1);
-}
-
-.beach img {
-    /* Micro Layout: Image styling */
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.beach p {
-    /* Micro Layout: Text styling */
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-h2 {
-    /* Micro Layout: Heading styling */
-    color: #333;
-    margin-bottom: 20px;
+.overlay-text {
+    font-size: 20px;
+    font-family: 'Great Vibes', cursive; 
+    font-weight: 400; 
+    color: white; 
 }
